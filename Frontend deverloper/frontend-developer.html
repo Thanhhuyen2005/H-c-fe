@@ -1,0 +1,155 @@
+<!--
+    1. <header> phần đầu trang
+       <table> chia layout
+       <tr> dòng
+       <td> ô
+       align="right" căn phải menu
+    2. <section> chưa nội dung
+        <center> căn giữa
+    3. border="1" tạo đường viền để nhìn rõ layout
+       width="100%" bảng chiếm toàn bộ chiều ngang
+       <a> tạo link
+       href: địa chỉ link
+       <ul> chứa danh sách
+       <li> chưa 1 mục trong danh sách
+    4. <div> Khối chứ
+        Class: đặt tên để css điều khiển
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <table width="100%">
+            <tr>
+                <td with="50%"> Your name</td>
+                <td align="right"> 
+                    Home/ Project / Articles / Contact
+                </td>
+            </tr>
+            
+        </table>
+    </header>
+
+    <section>
+        <center>
+            <h2>Frontend Developer</h2>
+            <p>
+                html only with proer layout, no styling
+            </p>
+        </center>
+    </section>
+
+    <Section>
+        <table border="1" with="100%">
+        <tr>
+            <td with="30%">
+                <h3> Projects</h3>
+                <p>HTML Only Portfolio</p>
+                <hr>
+
+                <p>Calculator</p>
+                <hr>
+
+                <p>Quiz app</p>
+                <hr>
+
+                <p>Product Upcoming Page</p>
+            </td>
+
+            <td with="40%">
+                <h3>Work Experience</h3>
+                <p>roadmap.sh</p>
+                <p>Solved all the frontend projects</p>
+                <a href="#"> Visit my profile </a>
+                <hr>
+
+                <p>OpenSoure work</p>
+                <p>Contributed to 50..... 200 Github Stars</p>
+                <a href="#"> Visit my Github Profile</a>
+            </td>
+
+            <td with="30%">
+                <h3>Education</h3>
+                <p>
+                    Graduated with 3.76 out of 4 CGPA.
+                    Won Acme Hackathon.
+                    Organized 30 sessions.
+                </p>
+                <ul>
+                    <li>Object Oriented Programming</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Web Engineering</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Human Computer Interaction</li>
+                    <li>Computer Graphics</li>
+                    <li>Database Management Systems</li>
+                    <li>Distributed Database Systems</li>
+                    <li>Discrete Mathematics</li> 
+                </ul>
+            </td>
+        </tr>
+        </table>
+    </Section>
+
+    <Section>
+        <h3> Reviews from my teacher</h3>
+        <style>
+            .Reviews{
+                display: flex;
+                gap: 25px;
+                margin-top: 20px;
+            }
+
+            .review-box{
+                width: 30%;
+                border: 2px solid black;
+                border-radius: 25px;
+                padding: 20px;
+            }
+
+            .teacher{
+                margin-top: 15px;
+                color: gray;
+            }
+
+            .container{
+                width:900px;
+                margin:40px auto;
+                border:3px solid black;
+                padding:20px;
+            }
+        </style>
+
+        <div class="Reviews">
+            <div class="review-box">
+                <p>John doe was a brilliant student; 
+                    always stood out with his assignments.</p>
+                <p class="teacher">Jane Doe <br>Assistant Professor </p>
+            </div>
+
+            <div class="review-box">
+                <p>John doe was a brilliant student;
+                always stood out with his assignments.</p>
+                <p class="teacher">Jane Doe <br> Assistant Professor</p>
+            </div>
+
+            <div class="review-box">
+                <p>John doe was a brilliant student; 
+                    always stood out with his assignments.</p>
+                <p class="teacher">Jane Doe <br> Assistant Professor</p>
+            </div>
+        </div>
+        <section>
+            <center>@ all right reserved 2025</center>
+        </section>
+    </Section>
+    </div>
+    
+</body>
+</html>
