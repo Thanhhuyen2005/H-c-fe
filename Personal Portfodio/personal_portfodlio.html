@@ -1,0 +1,229 @@
+<!-- 
+    width:500px; Đặt chiều rộng của box.Nếu không có dòng này:Nếu không có dòng này:box sẽ kéo dài hết trang
+    border:2px solid black; Tạo viền đen cho box, 2px = độ dày, solid = nét liền
+    border-radius:25px; Tạo bo góc tròn
+    padding:20px; Tạo khoảng cách giữa chữ và viền, Nếu không có:chữ sẽ dính sát khung
+    margin:20px auto; giúp box nằm giữa
+    text-align:left; Giữ chữ không bị căn giữa.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnal Portfodio</title>
+
+     <style>
+         *{
+             box-sizing: border-box;
+         }
+
+         .Container{
+        display:flex;
+        gap:10px;
+        width:100%;
+        }
+                                                                        
+        .Reviews{
+        width:300px;
+        border:2px solid black;
+        border-radius:25px;
+        padding:20px; 
+        margin:20px auto;
+        text-align:left;
+        }
+                                    
+        .Mot{
+        width:100%;
+        border:2px solid black;
+        border-radius:25px;
+        padding:20px;
+        margin:20px 0;
+        text-align:left;
+        }
+
+         .Hai{
+         width:100%;
+        border:2px solid black;
+        border-radius:25px;
+        padding:20px;
+        margin:20px 0;
+        text-align:left;
+        }
+
+        .Reviews2{
+            display: flex;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .review-box{
+            width: 30%;
+            border: 2px solid black;
+            border-radius: 25px;
+            padding: 20px;
+        }
+
+        .teacher{
+            margin-top: 15px;
+            color: gray;
+        }
+        
+        </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="Mot">
+            <header>
+
+            <center>
+                <p>your name <br> Home/ Project/ Articles/ Contact</p>
+                <h3>Frontend Developer</h3>
+                <p>hrml only with proer lahyout, no styling</p>
+                <hr>
+
+                <h3>Project</h3>
+                <hr>
+                <p>HTML only Prortfolio</p>
+                <hr>
+                <p>Calculator</p>
+                <hr>
+                <p>Quizz App</p>
+                <hr>
+                <p>Countdown</p>
+                <hr>
+                <p>Product Upcoming Page</p>
+                <hr>
+                <p>Work experience</p>
+                <hr>
+            </center>
+
+            <p>roadmap.sh <br>
+            Contributed to 50..... 200 Github Starts.</p>
+
+            <a href="#">Visit my Github Profile</a>
+            <hr>
+
+           <h3 align="center">Education</h3>
+
+            <p>Graduated with 3.76 out of 4 CGPA/ Won Acme hackathon. Organized 30 sessions.</p>
+
+            <p>Courses I took:</p>
+
+            <ul>
+                <li>Object</li>
+                <li>Data</li>
+                <li>Web</li>
+                <li>Arlifcial</li>
+                <li>Human</li>
+                <li>Computer</li>
+                <li>Database</li>
+                <li>Distributed</li>
+                <li>Discreet</li>
+            </ul>
+
+            <hr>
+
+            <h3>ReViews from my teacher</h3>
+
+            <div class="Reviews">
+                <p>
+                John doe was a brillant stdent;
+                always stood out with his assignments
+                </p>
+            </div>
+
+            <p align="center">@ all right seserved 2025</p>
+
+            </header>
+        </div>
+        
+
+        <div class="Hai">
+            <header>
+                <table width="100%">
+                    <tr>
+                        <td>Your name</td>
+                        <td align="right">Hom/ Project/ Articles/ Contact</td>
+                    </tr>
+                </table>
+            </header>
+
+            <section>
+                <h3 align="center">Frontend Developer</h3>
+                <p align="center">html only with proper layout, no styling</p>
+                <hr>
+            </section>
+                
+            <section>
+                <table border="1" width="100%" >
+                    <tr>
+                        <td width="20%">
+                            <h3>Projects</h3>
+                            <p>HTML only portloio</p>
+                            <hr>
+
+                            <p>Calculator</p> <hr>
+                            <p>Quizz app</p><hr>
+                            <p>Countdown Timer</p><hr>
+                            <p>Product Upcoming page</p>
+                        </td>
+
+                        <td with="30%">
+                            <h3>Work Experoence</h3>
+                            <p>roadmap.sp <br>
+                                Solved all the frontend projects</p>
+                            <a href="#">Visit my profile</a><hr>
+
+                            <p>Opensource work</p>
+                            <p>Contributed to 50 ...... 200 Github Stars</p>
+                            <a href="#">Visit my Github Profile</a>
+                        </td>
+
+                        <td width="50%">
+                            <h3>Education</h3>
+                            <p>Graduated with 3.76 out of 4 CGPA/ Won Acme hackathon. Organized 30 sessions.</p>
+                            <p>Courses I took:</p>
+                            <ul>
+                                <li>Object</li>
+                                <li>Data</li>
+                                <li>Web</li>
+                                <li>Arlifcial</li>
+                                <li>Human</li>
+                                <li>Computer</li>
+                                <li>Database</li>
+                                <li>Distributed</li>
+                                <li>Discreet</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <h3>Reviews from my teacher</h3>
+            <div class="Reviews2">
+                <div class="review-box">
+                    <p>John doe was a brilliant student; 
+                    always stood out with his assignments.</p>
+                    <p class="teacher">Jane Doe <br>Assistant Professor </p>
+                </div>
+
+                 <div class="review-box">
+                    <p>John doe was a brilliant student;
+                    always stood out with his assignments.</p>
+                    <p class="teacher">Jane Doe <br> Assistant Professor</p>
+                </div>
+
+                <div class="review-box">
+                    <p>John doe was a brilliant student; 
+                        always stood out with his assignments.</p>
+                    <p class="teacher">Jane Doe <br> Assistant Professor</p>
+                </div>
+            </div>
+
+            <p align="center">@ all rights reserved 2025</p>
+        </div>
+    </div>
+    
+</body>
+</html>
